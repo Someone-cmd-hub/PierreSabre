@@ -1,5 +1,6 @@
 import Personnages.Commercant;
 import Personnages.Humain;
+import Personnages.Yakuza;
 
 public class HistoireTP4 {
 	public static void main(String[] args) {
@@ -14,5 +15,8 @@ public class HistoireTP4 {
 		marco.seFaireExtorquer();
 		marco.recevoir(15);
 		marco.boire();
+		Yakuza yakuLeNoir = new Yakuza("Yaku le Noir","Cidre",30,"warsong");
+		yakuLeNoir.direBonjour();
+		yakuLeNoir.extorquer(marco);
 	}
 }
