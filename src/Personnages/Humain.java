@@ -2,9 +2,9 @@ package Personnages;
 
 public class Humain {
 	//attribut
-			private String nom;
-			private String boisson;
-			private int argent;
+			protected String nom;
+			protected String boisson;
+			protected int argent;
 			
 	//constructor	
 			public Humain(String nom, String boisson, int argent) {
@@ -25,7 +25,7 @@ public class Humain {
 			
 			
 	//methods
-			private void parler(String texte) {
+			protected void parler(String texte) {
 				System.out.println( "(" + nom + ") - " + texte);
 			}
 			public void acheter(String bien,int prix) {
