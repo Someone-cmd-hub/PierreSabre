@@ -1,5 +1,6 @@
 import Personnages.Commercant;
 import Personnages.Humain;
+import Personnages.Ronin;
 import Personnages.Yakuza;
 
 public class HistoireTP4 {
@@ -18,5 +19,7 @@ public class HistoireTP4 {
 		Yakuza yakuLeNoir = new Yakuza("Yaku le Noir","Cidre",30,"warsong");
 		yakuLeNoir.direBonjour();
 		yakuLeNoir.extorquer(marco);
+		Ronin roro = new Ronin("Roro","Shochu",60);
+		roro.donner(marco);
 	}
 }
