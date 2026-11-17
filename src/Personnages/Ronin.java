@@ -20,4 +20,19 @@ public class Ronin extends Humain{
 			honneur++;
 		}
 	}
+	public void provoquerDuel(Yakuza yaku) {
+		int force = 2 * honneur;
+		parler("Je t'ai trouvé vermine, tu vas payer pour ce que tu as fait");
+		if (force >= yaku.getReputation()) {
+			parler("Je t'ai eu malfrat !");
+			argent += yaku.perdre();
+			honneur++;
+		}
+		else {
+			yaku.gagner(argent);
+			parler("Tu as été plus fort aujourd'hui...");
+			honneur--;
+			argent=0;
+		}
+	}
 }

@@ -21,5 +21,6 @@ public class HistoireTP4 {
 		yakuLeNoir.extorquer(marco);
 		Ronin roro = new Ronin("Roro","Shochu",60);
 		roro.donner(marco);
+		roro.provoquerDuel(yakuLeNoir);
 	}
 }
